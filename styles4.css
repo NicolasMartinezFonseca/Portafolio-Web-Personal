@@ -1,0 +1,81 @@
+/* Aspectos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+:root{ 
+    --principal-color: #635985; 
+    --secundario-color: #443C68;
+    --terciario-color: #393053;
+    --cuartiario-color: #18122B;
+    --titulos-size: 60px;
+    --subtitulos-size: 40px;
+    --parrafos-size: 20px;
+}
+
+*{
+    font-family: 'Vidaloka', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    }
+
+/* Home */
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(Background3.png);
+    background-size: cover;
+}
+
+.bg-portafolio{
+    background: var(--cuartiario-color);
+}
+
+.bg-portafolio .nav-link,
+.bg-portafolio .navbar-brand{
+    color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.bg-portafolio .nav-link{
+    margin: 0 50px;
+}
+
+#hero{
+    text-align: center;
+    color: #fff;
+}
+
+#contacts{
+    background: var(--cuartiario-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#contactme{
+    background: var(--cuartiario-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Responsive */
+
+@media screen and (min-width:320px) and (max-width:990px){
+    header nav button.navbar-toggler{
+        background: var(--principal-color);
+    }
+}
